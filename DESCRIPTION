@@ -1,13 +1,13 @@
 Package: gpsTurns
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Find location of left and right turns from GPS coordinates.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Guillermo Basulto-Elias
+Maintainer: Guillermo Basulto-Elias <basulto@iastate.edu>
+Description: Find location of left and right turns from GPS coordinates. Provide tools to compare how turns occurred.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/gbasulto/gpsTurns
 BugReports: https://github.com/gbasulto/gpsTurns/issues
+RoxygenNote: 7.2.3
