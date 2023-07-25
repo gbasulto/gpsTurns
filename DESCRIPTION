@@ -1,6 +1,6 @@
 Package: gpsTurns
 Type: Package
-Title: Find location of left and right turns from GPS coordinates.
+Title: Find location of left and right turns from GPS coordinates
 Version: 0.1.0
 Author: Guillermo Basulto-Elias
 Maintainer: Guillermo Basulto-Elias <basulto@iastate.edu>
@@ -11,3 +11,5 @@ LazyData: true
 URL: https://github.com/gbasulto/gpsTurns
 BugReports: https://github.com/gbasulto/gpsTurns/issues
 RoxygenNote: 7.2.3
+Imports: 
+    tibble
