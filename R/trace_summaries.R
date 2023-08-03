@@ -39,7 +39,7 @@ calculate_longest_na_seq <- function(x) {
 #'
 #' @param x Vector with, potentially, missing values.
 #'
-#' @return An integer witht the total number of sequences.
+#' @return An integer with the total number of sequences.
 #' @export
 #'
 #' @examples

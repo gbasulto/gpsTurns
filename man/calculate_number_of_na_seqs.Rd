@@ -10,7 +10,7 @@ calculate_number_of_na_seqs(x)
 \item{x}{Vector with, potentially, missing values.}
 }
 \value{
-An integer witht the total number of sequences.
+An integer with the total number of sequences.
 }
 \description{
 Compute the number of sequences of NAs. Returns zero if there are no missing values.
