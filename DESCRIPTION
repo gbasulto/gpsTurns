@@ -4,7 +4,7 @@ Title: Find location of left and right turns from GPS coordinates
 Version: 0.1.0
 Description: Find location of left and right turns from GPS coordinates. Provide tools to compare how turns occurred.
 Authors@R: 
-    person("Guillermo", "Basulto-Elias", role = "ctb")
+    person("Guillermo", "Basulto-Elias", role = c("aut", "cre"), email = "basulto@iastate.edu")
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
