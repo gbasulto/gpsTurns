@@ -3,4 +3,6 @@
 export(angle_diff)
 export(calculate_longest_na_seq)
 export(calculate_number_of_na_seqs)
+export(classify_turn)
+export(compute_gps_heading)
 export(cross_prod_sign)

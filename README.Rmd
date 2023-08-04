@@ -58,6 +58,7 @@ library(gpsTurns)
 
 
 ## Cross product signs
+## __________________________________________________
 cities <-
   tibble::tribble(
     ~city, ~latitude, ~longitude,
@@ -73,8 +74,13 @@ cities <-
 
 with(cities, cross_prod_sign(latitude, longitude))
 
-
+## Compute angle differences
+##__________________________________________________
 ## Must return NA, 45, 45, 45
 angle_diff(c(330, 15, 60, 15))
+
+## Compute GPS Heading
+with(cities, compute_gps_heading(latitude, longitude))
+
 ```
 
