@@ -49,8 +49,10 @@ calculate_number_of_na_seqs(x)
 
 ### Auxiliary Functions
 
--   `cros_prod_sign`: Cross product sign to indicate left of right turn.
--   `angle_diff`: Difference in angles (0 to 180) to compute change in heading.
+-   `cros_prod_sign`: Cross product sign to indicate left or right turn.
+-   `angle_diff`: Difference in angles (0 to 180) to compute the change in heading.
+-   `compute_gps_heading`: Heading based on GPS coordinates. No smoothing is performed.
+-   `classify_turns`: Determine whether a direction change classifies as a left or right turn.
 
 ```{r}
 
