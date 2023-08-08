@@ -56,9 +56,7 @@ calculate_number_of_na_seqs(x)
 
 library(gpsTurns)
 
-
-## Cross product signs
-## __________________________________________________
+## Sample dataset
 cities <-
   tibble::tribble(
     ~city, ~latitude, ~longitude,
@@ -72,6 +70,9 @@ cities <-
     "Anchorage", 61.2181, -149.9003
   )
 
+## Cross product signs
+## __________________________________________________
+## Must return vector of 1 and -1
 with(cities, cross_prod_sign(latitude, longitude))
 
 ## Compute angle differences
@@ -84,4 +85,12 @@ angle_diff(c(330, 15, 60, 15))
 ## Must return heading directions except for the last entry, which is NA
 with(cities, compute_gps_heading(latitude, longitude))
 
+
+## Assign turn labels
+##_____________________________________________________
+## Must return vector of "left", "rigth", "none"
+cp_signs <- cross_prod_sign(cities$latitude, cities$longitude)
+heading <- compute_gps_heading(cities$latitude, cities$longitude)
+heading_diffs <- angle_diff(heading)
+classify_turns(cp_signs, heading_diffs, 20)
 ```
