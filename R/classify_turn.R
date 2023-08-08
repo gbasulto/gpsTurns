@@ -1,8 +1,6 @@
 
 #' Classify turns
 #'
-#'
-#'
 #' @param crossprod_sign a
 #' @param heading_difference b
 #' @param angle_threshold c
@@ -20,7 +18,7 @@ classify_turn <- function (
   hd <- heading_difference
   alpha <- angle_threshold
 
-  ## Compute sign
+  ## Compute turn direction
   case_when(
     (cps > 0) & (hd > alpha) ~ "left",
     (cps < 0) & (hd > alpha) ~ "right",
