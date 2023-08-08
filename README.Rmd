@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of gpsTurns is to ...
+The aim of `gpsTurns` is to count the number of left and right turns using a given set of GPS coordinates. Additionally, it provides tools for analyzing the execution of these turns.
 
 ## Installation
 
-You can install the development version of gpsTurns from [GitHub](https://github.com/) with:
+You can install the development version of gpsTurns from [GitHub](https://github.com/) with the following:
 
 ``` r
 # install.packages("devtools")
@@ -34,7 +34,7 @@ devtools::install_github("gbasulto/gpsTurns")
 
 ## Trace Summaries
 
-Calculate longest sequence of consecutive NAs, and the number of such sequences.
+Calculate the longest sequence of consecutive NAs and the number of such sequences.
 
 ```{r}
 
@@ -49,8 +49,8 @@ calculate_number_of_na_seqs(x)
 
 ### Auxiliary Functions
 
-- `cros_prod_sign`: Cross product sign to indicate left of right turn.
-- `angle_diff`: Difference in angles (0 to 180) to compute change in heading.
+-   `cros_prod_sign`: Cross product sign to indicate left of right turn.
+-   `angle_diff`: Difference in angles (0 to 180) to compute change in heading.
 
 ```{r}
 
@@ -80,7 +80,8 @@ with(cities, cross_prod_sign(latitude, longitude))
 angle_diff(c(330, 15, 60, 15))
 
 ## Compute GPS Heading
+##_____________________________________________________
+## Must return heading directions except for the last entry, which is NA
 with(cities, compute_gps_heading(latitude, longitude))
 
 ```
-

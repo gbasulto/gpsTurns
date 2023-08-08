@@ -6,12 +6,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of gpsTurns is to …
+The aim of `gpsTurns` is to count the number of left and right turns
+using a given set of GPS coordinates. Additionally, it provides tools
+for analyzing the execution of these turns.
 
 ## Installation
 
 You can install the development version of gpsTurns from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/) with the following:
 
 ``` r
 # install.packages("devtools")
@@ -22,7 +24,7 @@ devtools::install_github("gbasulto/gpsTurns")
 
 ## Trace Summaries
 
-Calculate longest sequence of consecutive NAs, and the number of such
+Calculate the longest sequence of consecutive NAs and the number of such
 sequences.
 
 ``` r
@@ -74,6 +76,8 @@ angle_diff(c(330, 15, 60, 15))
 #> [1] NA 45 45 45
 
 ## Compute GPS Heading
+##_____________________________________________________
+## Must return heading directions except for the last entry, which is NA
 with(cities, compute_gps_heading(latitude, longitude))
 #> [1] 206.338934 326.223102 318.954230 358.754675   6.003073 342.964883 318.586753
 #> [8]         NA
