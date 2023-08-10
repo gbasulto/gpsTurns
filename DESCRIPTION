@@ -13,3 +13,4 @@ BugReports: https://github.com/gbasulto/gpsTurns/issues
 RoxygenNote: 7.2.3
 Imports: 
     tibble
+Language: en-US
