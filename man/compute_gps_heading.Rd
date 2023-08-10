@@ -15,7 +15,7 @@ compute_gps_heading(latitude, longitude)
 Vector of headings (between 0 and 360) of size n. The last entry is \code{NA}.
 }
 \description{
-Calculate the heading fo two vectors of coordinates.
+Calculate the heading of two vectors of coordinates.
 }
 \examples{
 cities <-

@@ -1,6 +1,6 @@
 #' Compute GPS Heading
 #'
-#' Calculate the heading fo two vectors of coordinates.
+#' Calculate the heading of two vectors of coordinates.
 #'
 #' @param latitude Vector of latitudes of size n.
 #' @param longitude Vector of longitudes of size n.

@@ -1,11 +1,13 @@
 
 #' Angle Difference
 #'
-#' Compute the angle difference. The Output are values between 0 and 180 degrees.
+#' Compute the angle difference. The Output are values between 0 and 180
+#' degrees.
 #'
 #' @param theta Vector of angles of size n.
 #'
-#' @return A vector of size n whose first entry is NA, the second is the difference between the 2nd and 1st, and so on.
+#' @return A vector of size `n` whose first entry is NA, the second is the
+#'   difference between the 2nd and 1st, and so on.
 #' @export
 #'
 #' @examples
