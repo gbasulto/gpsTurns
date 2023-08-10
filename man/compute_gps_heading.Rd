@@ -12,7 +12,8 @@ compute_gps_heading(latitude, longitude)
 \item{longitude}{Vector of longitudes of size n.}
 }
 \value{
-Vector of headings (between 0 and 360) of size n. The last entry is \code{NA}.
+Vector of headings (between 0 and 360) of size n. The last entry is
+  \code{NA}.
 }
 \description{
 Calculate the heading of two vectors of coordinates.

@@ -5,7 +5,8 @@
 #' @param latitude Vector of latitudes of size n.
 #' @param longitude Vector of longitudes of size n.
 #'
-#' @return Vector of headings (between 0 and 360) of size n. The last entry is \code{NA}.
+#' @return Vector of headings (between 0 and 360) of size n. The last entry is
+#'   \code{NA}.
 #' @export
 #'
 #' @examples
@@ -42,7 +43,8 @@ compute_gps_heading <- function(latitude, longitude) {
 
   # Compute heading
   y <- sin(delta_lon_rad) * cos(lat2_rad)
-  x <- cos(lat1_rad) * sin(lat2_rad) - sin(lat1_rad) * cos(lat2_rad) * cos(delta_lon_rad)
+  x <- cos(lat1_rad) * sin(lat2_rad) -
+    sin(lat1_rad) * cos(lat2_rad) * cos(delta_lon_rad)
   heading_rad <- atan2(y, x)
 
   # Convert heading from radians to degrees

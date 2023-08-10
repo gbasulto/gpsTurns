@@ -3,12 +3,14 @@
 #'
 #' Calculate the sign of the cross product.
 #'
-#' Negative values are associated with right turns while positive values with left turns.
+#' Negative values are associated with right turns while positive values with
+#' left turns.
 #'
 #' @param lat Vector of latitudes of size n.
 #' @param lon Vector of longitudes of size n.
 #'
-#' @return Vector of cross product signs of size n. The first element and last elements are NA.
+#' @return Vector of cross product signs of size n. The first element and last
+#'   elements are NA.
 #' @export
 #'
 #' @examples

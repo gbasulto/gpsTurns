@@ -13,7 +13,8 @@ calculate_number_of_na_seqs(x)
 An integer with the total number of sequences.
 }
 \description{
-Compute the number of sequences of NAs. Returns zero if there are no missing values.
+Compute the number of sequences of NAs. Returns zero if there are no missing
+values.
 }
 \examples{
 ## Max = 3

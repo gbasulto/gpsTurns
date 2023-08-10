@@ -1,7 +1,8 @@
 
 #' Size of longest sequence of NAs
 #'
-#' Calculate the longest sequence of NAs in a vector. Zero si returned if there are no NAs.
+#' Calculate the longest sequence of NAs in a vector. Zero si returned if there
+#' are no NAs.
 #'
 #' @param x Vector with NAs.
 #'
@@ -35,7 +36,8 @@ calculate_longest_na_seq <- function(x) {
 
 #' Total NA sequences
 #'
-#' Compute the number of sequences of NAs. Returns zero if there are no missing values.
+#' Compute the number of sequences of NAs. Returns zero if there are no missing
+#' values.
 #'
 #' @param x Vector with, potentially, missing values.
 #'

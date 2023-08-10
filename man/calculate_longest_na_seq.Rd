@@ -13,7 +13,8 @@ calculate_longest_na_seq(x)
 Integer with the size of the longest consecutive NAs in vector x.
 }
 \description{
-Calculate the longest sequence of NAs in a vector. Zero si returned if there are no NAs.
+Calculate the longest sequence of NAs in a vector. Zero si returned if there
+are no NAs.
 }
 \examples{
 ## Max = 3

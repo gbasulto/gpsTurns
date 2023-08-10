@@ -12,13 +12,15 @@ cross_prod_sign(lat, lon)
 \item{lon}{Vector of longitudes of size n.}
 }
 \value{
-Vector of cross product signs of size n. The first element and last elements are NA.
+Vector of cross product signs of size n. The first element and last
+  elements are NA.
 }
 \description{
 Calculate the sign of the cross product.
 }
 \details{
-Negative values are associated with right turns while positive values with left turns.
+Negative values are associated with right turns while positive values with
+left turns.
 }
 \examples{
 cities <-
