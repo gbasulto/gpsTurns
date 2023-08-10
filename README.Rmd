@@ -23,7 +23,7 @@ The aim of `gpsTurns` is to count the number of left and right turns using a giv
 
 ## Installation
 
-You can install the development version of gpsTurns from [GitHub](https://github.com/) with the following:
+You can install the development version of `gpsTurns` from [GitHub](https://github.com/) with the following:
 
 ``` r
 # install.packages("devtools")

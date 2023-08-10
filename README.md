@@ -12,7 +12,7 @@ for analyzing the execution of these turns.
 
 ## Installation
 
-You can install the development version of gpsTurns from
+You can install the development version of `gpsTurns` from
 [GitHub](https://github.com/) with the following:
 
 ``` r

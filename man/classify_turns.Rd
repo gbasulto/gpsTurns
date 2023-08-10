@@ -7,7 +7,7 @@
 classify_turns(crossprod_sign, heading_difference, angle_threshold)
 }
 \arguments{
-\item{crossprod_sign}{Vector of cross product signs. Usually the ouput of
+\item{crossprod_sign}{Vector of cross product signs. Usually the output of
 \code{\link{cross_prod_sign}}.}
 
 \item{heading_difference}{Vector of heading differences. Usually the output

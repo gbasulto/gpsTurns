@@ -5,7 +5,7 @@
 #' the cross product, the heading difference, and the angle threshold to
 #' determine if the change in direction was a turn.
 #'
-#' @param crossprod_sign Vector of cross product signs. Usually the ouput of
+#' @param crossprod_sign Vector of cross product signs. Usually the output of
 #'   \code{\link{cross_prod_sign}}.
 #' @param heading_difference Vector of heading differences. Usually the output
 #'   of \code{\link{angle_diff}}.
