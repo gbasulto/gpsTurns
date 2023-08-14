@@ -4,6 +4,9 @@
 # gpsTurns
 
 <!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/gbasulto/gpsTurns/branch/master/graph/badge.svg)](https://app.codecov.io/gh/gbasulto/gpsTurns?branch=master)
 <!-- badges: end -->
 
 The aim of `gpsTurns` is to count the number of left and right turns
