@@ -21,7 +21,7 @@ test_that("turn_labels-works", {
   out <- classify_turns(cp_signs, heading_diffs, 20)
 
   expect_true(is.na(out[1]), label = "First entry is NA")
-  expect_false(is.na(out[8]), label = "Last entry is NA")
-  expect_equal(is.na(out[2]), "right")
-  expect_equal(is.na(out[2]), "none")
+  expect_true(is.na(out[8]), label = "Last entry is NA")
+  expect_equal(out[2], "right")
+  expect_equal(out[3], "none")
 })
