@@ -11,21 +11,23 @@ aggregate_by_segment_and_label_turns <- function (
 
   gps_data |>
     ## Filter speed
-    filter(speed_mph >= {{minimum_speed_mph}}) |>
+    dplyr::filter(speed_mph >= {{minimum_speed_mph}}) |>
 
     ## Create segment cluster starting at 1
-    mutate(segment = ceiling(drive_miles / segment_length_mi)) |>
-    group_by(segment) |>
+    dplyr::mutate(segment = ceiling(drive_miles / segment_length_mi)) |>
+    dplyr::group_by(segment) |>
 
     ## Aggregate data
-    summarize(gps_long = mean(gps_long, na.rm = TRUE),
-              gps_lat = mean(gps_lat, na.rm = TRUE),
-              heading = median(gps_heading, na.rm = TRUE)) |>
+    dplyr::summarize(
+      gps_long = mean(gps_long, na.rm = TRUE),
+      gps_lat = mean(gps_lat, na.rm = TRUE),
+      heading = median(gps_heading, na.rm = TRUE)) |>
 
     ## Calculate cross product, heading difference, and turn
-    mutate(
+    dplyr::mutate(
       crossprod_sign = gpsTurns::cross_prod_sign(gps_lat, gps_long),
       heading_difference = gpsTurns::angle_diff(heading),
       turn = gpsTurns::classify_turns(
-        crossprod_sign, heading_difference, angle_threshold))
+        crossprod_sign, heading_difference, angle_threshold)
+      )
 }
