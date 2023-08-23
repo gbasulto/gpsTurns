@@ -1,6 +1,6 @@
 Package: gpsTurns
 Type: Package
-Title: Find location of left and right turns from GPS coordinates
+Title: Find Location and Direction of Turns from GPS Coordinates
 Version: 0.1.0
 Description: Find location of left and right turns from GPS coordinates. Provide tools to compare how turns occurred.
 Authors@R: 
