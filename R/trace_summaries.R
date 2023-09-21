@@ -1,5 +1,5 @@
 
-#' Size of longest sequence of NAs
+#' Size of longest sequence of missing values
 #'
 #' Calculate the longest sequence of NAs in a vector. Zero si returned if there
 #' are no NAs.
