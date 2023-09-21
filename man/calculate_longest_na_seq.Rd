@@ -2,7 +2,7 @@
 % Please edit documentation in R/trace_summaries.R
 \name{calculate_longest_na_seq}
 \alias{calculate_longest_na_seq}
-\title{Size of longest sequence of NAs}
+\title{Size of longest sequence of missing values}
 \usage{
 calculate_longest_na_seq(x)
 }
